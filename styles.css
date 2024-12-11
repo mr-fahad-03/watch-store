@@ -777,7 +777,7 @@ footer {
    
    
     .shop-container{
-      grid-template-columns: repeat(1,144px);
+      grid-template-columns: repeat(2,144px);
    
   }
   .shop-container .box img{
@@ -1001,7 +1001,7 @@ footer {
 /* Adjusting for mobile sizes */
 @media (max-width: 768px) {
     .home-content {
-        grid-template-columns: 1fr;
+        grid-template-columns: 2fr;
         padding: 2rem 1rem;
     }
 
