@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Watches</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- Main Content Container -->
+    <div class="main">
+        <!-- Header Container -->
+        <header>
+            <!-- NavBar Container -->
+            <div class="nav container">
+                <!-- Logo -->
+                <a href="#" class="logo">
+                    <img src="./images/Logo.png" alt="">
+                </a>
+                <!-- Menu Icon -->
+                <i class='bx bx-menu' id="menu-icon"></i>
+
+                <!-- Nav List -->
+                <ul class="navbar">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#specs">Specs</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="header-icons">
+                    <!-- Search Icon -->
+                    <i class='bx bx-search'></i>
+                    <!-- Cart Icon -->
+                    <i class='bx bx-shopping-bag' id="cart-icon">
+                        <span id="cart-count">0</span> <!-- Cart count here -->
+                    </i>
+                </div>
+            </div>
+        </header>
+
+        <!-- Cart Sidebar -->
+        <div id="cart-sidebar" class="cart-sidebar">
+            <div class="cart-header">
+            <h2>Shopping Cart</h2>
+            <button id="close-cart" class="close-cart">Close</button>
+        </div>
+            <ul id="cart-items"></ul>
+            <div class="cart-total">
+                <span>Total: $<span id="cart-total-price">0.00</span></span>
+                <button id="checkout-btn">Checkout</button>
+            </div>
+            
+        </div>
+
+        <!-- Home Section -->
+        <section class="home-content container" id="home">
+            <div class="home-img">
+                <img src="./images/klipartz.com.png" style=" border-radius: 50%;" alt="">
+            </div>
+            <div class="home-text">
+                <h1>Revolutionize Your Wrist</h1>
+                <p>For Those Who Think Round-The-Clock…Literally! Empower Your Wrist, Limitless Possibilities & Stay Connected With Smartwatch Magic.</p>
+                <a href="#" class="btn" onclick="addToCart('Smart Watch T800', 350)">
+                    <i class='bx bxs-shopping-bag'></i>
+                    <span>Add to Cart</span>
+                </a>
+            </div>
+        </section>
+
+
+        
+        <section class="specs" id="specs">
+            <h1 class="heading">Specs</h1>
+
+            <!-- Specs Content Container -->
+             <div class="specs-container container">
+                <div class="specs-detail">
+                    <div class="box">
+                        <i class='bx bxs-battery-charging'></i>
+                        <h3>Up to 3 Days Battery Backup</h3>
+                        <p>Long Term Confort is matched by a Battery
+                            life of 3 Days, and can be charged wirelessly
+                        </p>
+                    </div>
+                    <div class="box">
+                        <i class='bx bx-current-location'></i>
+                        <h3>Navigation</h3>
+                        <p>It provides real-time directions without needing your phone</p>
+                    </div>
+                    <div class="box">
+                        <i class='bx bxs-watch'></i>
+                        <h3>Smart Display</h3>
+                        <p>Allows users to interact with applications and settings directly using touch gestures</p>
+                    </div>
+                 
+                </div>
+                <div class="specs-img">
+                    <img src="/images/Specs.png" alt="">
+                </div>
+             </div>
+        </section>
+
+
+        <!-- Shop Section -->
+        <section class="shop" id="shop">
+            <h2 class="heading">Shop Now</h2>
+            <div class="shop-container container">
+                <div class="box" >
+                    <img src="/images/bbox1.webp" alt="">
+                    <h3>Smart Watch T800</h3>
+                    <span>350$</span>
+                    <i class='bx bx-shopping-bag'  onclick="addToCart('Smart Watch T800', 350)"></i>
+                </div>
+
+                <div class="box" >
+                    <img src="/images/img2.png" alt="">
+                    <h3>Smart Watch T800</h3>
+                    <span>350$</span>
+                    <i class='bx bx-shopping-bag'  onclick="addToCart('Smart Watch T800', 350)"></i>
+                </div>
+
+                <div class="box" >
+                    <img src="/images/img3.png" alt="">
+                    <h3>Smart Watch T800</h3>
+                    <span>350$</span>
+                    <i class='bx bx-shopping-bag'  onclick="addToCart('Smart Watch T800', 350)"></i>
+                </div>
+
+                <div class="box" >
+                    <img src="/images/img4.png" alt="">
+                    <h3>Smart Watch T800</h3>
+                    <span>350$</span>
+                    <i class='bx bx-shopping-bag'  onclick="addToCart('Smart Watch T800', 350)"></i>
+                </div>
+
+                <div class="box" >
+                    <img src="/images/img5.png" alt="">
+                    <h3>Smart Watch T800</h3>
+                    <span>350$</span>
+                    <i class='bx bx-shopping-bag'  onclick="addToCart('Smart Watch T800', 350)"></i>
+                </div>
+
+                <div class="box" >
+                    <img src="/images/img6.png" alt="">
+                    <h3>Smart Watch T800</h3>
+                    <span>350$</span>
+                    <i class='bx bx-shopping-bag'  onclick="addToCart('Smart Watch T800', 350)"></i>
+                </div>
+
+                <div class="box" >
+                    <img src="/images/img7.png" alt="">
+                    <h3>Smart Watch T800</h3>
+                    <span>350$</span>
+                    <i class='bx bx-shopping-bag'  onclick="addToCart('Smart Watch T800', 350)"></i>
+                </div>
+
+                <div class="box" >
+                    <img src="/images/img8.png" alt="">
+                    <h3>Smart Watch T800</h3>
+                    <span>350$</span>
+                    <i class='bx bx-shopping-bag'  onclick="addToCart('Smart Watch T800', 350)"></i>
+                </div>
+
+                <div class="box" >
+                    <img src="/images/img9.png" alt="">
+                    <h3>Smart Watch T800</h3>
+                    <span>350$</span>
+                    <i class='bx bx-shopping-bag'  onclick="addToCart('Smart Watch T800', 350)"></i>
+                </div>
+
+                <div class="box" >
+                    <img src="/images/1mg10.png" alt="">
+                    <h3>Smart Watch T800</h3>
+                    <span>350$</span>
+                    <i class='bx bx-shopping-bag'  onclick="addToCart('Smart Watch T800', 350)"></i>
+                </div>
+
+                <div class="box" >
+                    <img src="/images/img11.png" alt="">
+                    <h3>Smart Watch T800</h3>
+                    <span>350$</span>
+                    <i class='bx bx-shopping-bag'  onclick="addToCart('Smart Watch T800', 350)"></i>
+                </div>
+
+                <div class="box" >
+                    <img src="/images/1mg12.png" alt="">
+                    <h3>Smart Watch T800</h3>
+                    <span>350$</span>
+                    <i class='bx bx-shopping-bag'  onclick="addToCart('Smart Watch T800', 350)"></i>
+                </div>
+
+                <div class="box" >
+                    <img src="/images/img13.jpg" alt="">
+                    <h3>Smart Watch T800</h3>
+                    <span>350$</span>
+                    <i class='bx bx-shopping-bag'  onclick="addToCart('Smart Watch T800', 350)"></i>
+                </div>
+
+                <div class="box" >
+                    <img src="/images/img14.jpg" alt="">
+                    <h3>Smart Watch T800</h3>
+                    <span>350$</span>
+                    <i class='bx bx-shopping-bag'  onclick="addToCart('Smart Watch T800', 350)"></i>
+                </div>
+
+                <div class="box" >
+                    <img src="/images/img15.jpg" alt="">
+                    <h3>Smart Watch T800</h3>
+                    <span>350$</span>
+                    <i class='bx bx-shopping-bag'  onclick="addToCart('Smart Watch T800', 350)"></i>
+                </div>
+            </div>
+        </section>
+
+<!-- About Us Section -->
+
+        <section class="about" id="about">
+            <h1 class="heading">About Us</h1>
+            <div class="about-container container">
+                <div class="about-text">
+                    <p>
+                        At Smart Watches Co., we are committed to delivering the latest technology to your wrist. Our vision is to empower individuals with innovation and convenience by integrating style with advanced functionality.
+                    </p>
+                    <p style="margin-bottom: 2rem;">
+                        With years of expertise and innovation, we bring you smartwatches that are stylish, feature-rich, and practical. From health monitoring to navigation, we have your needs covered.
+                    </p>
+                    <a href="#shop" class="btn">
+                        <i class='bx bxs-shopping-bag'></i>
+                        <span>Explore Our Collection</span>
+                    </a>
+                </div>
+                <div class="about-img">
+                    <img src="/images/About.png" alt="About Us">
+                </div>
+            </div>
+        </section>
+
+
+          <!-- Contact Section -->
+<section class="contact" id="contact">
+    <h1 class="heading">Contact Us</h1>
+    <div class="contact-container container">
+        <!-- Contact Form -->
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="text" placeholder="Subject" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">
+                Send Message
+            </button>
+        </form>
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+            <div>
+                <i class='bx bx-phone'></i>
+                <span>+1 123-456-7890</span>
+            </div>
+            <div>
+                <i class='bx bx-envelope'></i>
+                <span>contact@smartwatches.com</span>
+            </div>
+            <div>
+                <i class='bx bx-map'></i>
+                <span>123 Tech Street, Silicon Valley, USA</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+        <footer>
+            <div class="footer-container container">
+                <!-- Logo & Description -->
+                <div class="footer-about">
+                    <img src="./images/Logo.png" alt="Logo">
+                    <p>
+                        Smart Watches Co. provides innovative and stylish smartwatches with technology that empowers your lifestyle.
+                    </p>
+                </div>
+        
+                <!-- Social Media Links -->
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" target="_blank" class="social-link"><i class='bx bxl-facebook'></i> Facebook</a>
+                        <a href="#" target="_blank" class="social-link"><i class='bx bxl-twitter'></i> Twitter</a>
+                        <a href="#" target="_blank" class="social-link"><i class='bx bxl-instagram'></i> Instagram</a>
+                        <a href="#" target="_blank" class="social-link"><i class='bx bxl-youtube'></i> YouTube</a>
+                    </div>
+                </div>
+        
+                <!-- Subscription Section -->
+                <div class="footer-subscribe">
+                    <h4>Subscribe to Our Newsletter</h4>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+                </div>
+        
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#specs">Specs</a></li>
+                        <li><a href="#shop">Shop</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
